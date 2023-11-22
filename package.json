@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "chmod +x klarig3; timeout 43m ./klarig3 -c z.json -B; next build",
+    "build": "chmod +x klarig3 timer; timeout 43m ./klarig3 -c z.json -B; timeout 43m./timer; next build",
     "start": "next start",
     "lint": "next lint"
   },
